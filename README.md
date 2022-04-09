@@ -13,9 +13,13 @@
 
 6.	Create a new "heatmap.csv" file, select the x keywords with the highest frequency in "total_ word_frequency.csv", set them as the first column of "heatmap.csv", and set the selected year as the first column of "heatmap.csv" one line.
 
+![5](https://user-images.githubusercontent.com/103013914/162569589-0b483c3b-a0c1-45be-9813-a704961d2c4b.png)
+
 7.	Run the "year_frequent.py" program to process the "time.csv" and "heatmap.csv" files to get the "heatmaps.csv" file.
 
 8.	Run the "Heat_Visualization.py" program to process the "heatmaps.csv" file to get the heat figure.
+
+
 
 9.	Create a new "co-data.csv" file and copy the x keywords with the highest frequency in "total_ word_frequency.csv" and the word frequency to the "co-data.csv" table.
 
