@@ -46,4 +46,5 @@
 ![7](https://user-images.githubusercontent.com/103013914/162569650-b4e65257-19de-4283-b918-60bc379f2d63.png)
 
 17.	Open the "nation_time.py" program. On line 11 of the code, re-enter the "country_data_count" attribute according to the data in the "number_of_country_articles.csv.csv" file. Run the "nation_time.py" program to get a graph of the percentage of articles published by each country each year.
+
 ![4](https://user-images.githubusercontent.com/103013914/162569656-e3422f98-5557-4bd1-9b0c-d27b90bb3592.png)
