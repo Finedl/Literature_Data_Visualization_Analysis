@@ -8,9 +8,8 @@
 
 4.	For the "keyword_final.csv" file, use the program "all_keyword_fre.py" to obtain the "total_ word_frequency.csv" file.
 
-5.	Associate the tables "keyword_final" and "wos_document" in Navicat, create a new table "time" to get the year and month of each keyword, and export the "time" table as "time.csv".
+5.	Associate the tables "keyword_final" and "wos_document" in Navicat, create a new table "time" to get the year and month of each keyword, and export the "time" table as "time.csv". (SQL statement: create table time as select keyword_final.document_unique_id, keyword_final.keyword, wos_document.pub_year, wos_document.pub_month_day  from   keyword_final join wos_document on keyword_final.document_unique_id = wos_document.unique_id)
 
-SQL statement: create table time as select keyword_final.document_unique_id, keyword_final.keyword, wos_document.pub_year, wos_document.pub_month_day from keyword_final join wos_document on keyword_final.document_unique_id = wos_document.unique_id
 
 6.	Create a new "heatmap.csv" file, select the x keywords with the highest frequency in "total_ word_frequency.csv", set them as the first column of "heatmap.csv", and set the selected year as the first column of "heatmap.csv" one line.
 
@@ -24,12 +23,7 @@ SQL statement: create table time as select keyword_final.document_unique_id, key
 
 11.	Run the "Co_Occurence.py" program to process the "Co_score.csv" and "co-data.csv" files to obtain the co-occurrence figure.
 
-12.	Run the following SQL code in Navicat to get a series of tables.
-
-SQL statement: create table aaa as select corresponding_author.document_unique_id, keyword_final.keyword, corresponding_author.author_id from corresponding_author join keyword_final on corresponding_author.document_unique_id = keyword_final.document_unique_id
-create table address as select aaa.document_unique_id, aaa.keyword, aaa.author_id, wos_affiliation.address from aaa join wos_affiliation on aaa.author_id = wos_affiliation.author_id
-create table country as select corresponding_author.document_unique_id, wos_affiliation.address from corresponding_author LEFT OUTER join wos_affiliation on corresponding_author.author_id = wos_affiliation.author_id
-create table address_time as select country.document_unique_id, wos_document.pub_year, country.address from country join wos_document on country.document_unique_id = wos_document.unique_id
+12.	Run the following SQL code in Navicat to get a series of tables. (SQL statement: create table aaa as select corresponding_author.document_unique_id, keyword_final.keyword, corresponding_author.author_id from corresponding_author join keyword_final on corresponding_author.document_unique_id = keyword_final.document_unique_id create table address as select aaa.document_unique_id, aaa.keyword, aaa.author_id, wos_affiliation.address from aaa join wos_affiliation on aaa.author_id = wos_affiliation.author_id create table country as select corresponding_author.document_unique_id, wos_affiliation.address from corresponding_author LEFT OUTER join wos_affiliation on corresponding_author.author_id = wos_affiliation.author_id create table address_time as select country.document_unique_id, wos_document.pub_year, country.address from country join wos_document on country.document_unique_id = wos_document.unique_id)
 
 13.	Export the table "address_time" as "address_time.csv" file.
 
