@@ -12,4 +12,10 @@
 SQL statement: create table time as select keyword_final.document_unique_id, keyword_final.keyword, wos_document.pub_year, wos_document.pub_month_day from keyword_final join wos_document on keyword_final.document_unique_id = wos_document.unique_id
 
 6.	Create a new "heatmap.csv" file, select the x keywords with the highest frequency in "total_ word_frequency.csv", set them as the first column of "heatmap.csv", and set the selected year as the first column of "heatmap.csv" one line.
+
 ![123](https://user-images.githubusercontent.com/103013914/162561094-937546ca-cf30-4c72-b1ec-e573b6066e56.png)
+
+9.	Create a new "co-data.csv" file and copy the x keywords with the highest frequency in "total_ word_frequency.csv" and the word frequency to the "co-data.csv" table.
+
+![image](https://user-images.githubusercontent.com/103013914/162561204-8ebbc4fb-96db-46fe-902b-4aff46cc378f.png)
+
