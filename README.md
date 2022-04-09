@@ -17,5 +17,6 @@ SQL statement: create table time as select keyword_final.document_unique_id, key
 
 9.	Create a new "co-data.csv" file and copy the x keywords with the highest frequency in "total_ word_frequency.csv" and the word frequency to the "co-data.csv" table.
 
-![image](https://user-images.githubusercontent.com/103013914/162561204-8ebbc4fb-96db-46fe-902b-4aff46cc378f.png)
+<img width="83" alt="图片 1" src="https://user-images.githubusercontent.com/103013914/162561236-2b2ec231-0317-49b1-a357-0050f15c4e7c.png">
+
 
